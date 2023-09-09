@@ -1,3 +1,4 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://waywardbit.ca/'
+languageCode = 'en-ca'
+title = 'Wayward Bit'
+theme = 'theme-waywardbit-bootstrap'
