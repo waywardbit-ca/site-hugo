@@ -1,8 +1,4 @@
 baseURL = 'https://waywardbit.ca/'
 languageCode = 'en-ca'
 title = 'Wayward Bit'
-theme = 'theme-waywardbit-bootstrap' 
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+theme = 'theme-waywardbit-bootstrap'

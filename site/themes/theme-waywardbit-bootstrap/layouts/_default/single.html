@@ -16,9 +16,11 @@
     </main>
     <div class="container">
       <h1>{{ .Title }}</h1>
+      {{- if isset .Params "tags" -}}
       <div class="border border-secondary p-1 ps-3 pe-3 mb-3 bg-body rounded">
         {{ partial "partials/tags.html" . }}
       </div>
+      {{- end -}}
       {{- .Content -}}
     </div>
     <footer class="footer mt-auto py-3 bg-light">

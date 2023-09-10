@@ -19,7 +19,7 @@
       {{- .Content -}}
       {{ $pages := ((.Paginator 5).Pages.ByPublishDate)}}
       {{ range (.Paginate .Pages.ByPublishDate 5).Pages }}
-      <div class="card">
+      <div class="card mb-4">
         <div class="card-body">
           <h5 class="card-title">{{ .Title }}</h5>
           <p class="card-text">{{ .Summary }}</p>
