@@ -1,0 +1,16 @@
+<div class="container">
+    <a class="navbar-brand" href="/">{{ .Site.Title }}</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>  
+    <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            {{ range .Site.Sections }}
+            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ end }}
+        </ul>
+        <form>
+            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+        </form>
+    </div>
+</div>
